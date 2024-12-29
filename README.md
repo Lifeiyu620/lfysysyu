@@ -1,1 +1,1 @@
-# lfysysyu
+# 完成对ScmoGNN的复现，已经将所需要的图神经网络以及数据打包放入data_preprocess进行训练即可。
