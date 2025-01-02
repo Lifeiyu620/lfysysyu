@@ -1,0 +1,811 @@
+INFO:root:Namespace(model_name='SCOMGNN', model_mode='')
+INFO:root:--------------------------------------------- BEGIN: 2024-12-22 12:56:16 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ batch_size         | 256                 
+ data_appendix      |                     
+ dataset            | Grocery_and_Gourm...
+ dropout            | 0                   
+ early_stop         | 10                  
+ emb_size           | 64                  
+ epoch              | 200                 
+ eval_batch_size    | 256                 
+ gpu                | 0                   
+ l2                 | 1e-06               
+ lr                 | 0.001               
+ main_metric        |                     
+ momentum           | 0.995               
+ num_neg            | 1                   
+ num_workers        | 5                   
+ optimizer          | Adam                
+ random_seed        | 0                   
+ save_final_results | 1                   
+ test_all           | 0                   
+ topk               | 5,10,20,50          
+===========================================
+INFO:root:Device: cpu
+INFO:root:Load corpus from data/Grocery_and_Gourmet_Food\BaseReader.pkl
+INFO:root:Namespace(model_name='SCOMGNN', model_mode='')
+INFO:root:--------------------------------------------- BEGIN: 2024-12-22 13:02:13 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ batch_size         | 256                 
+ data_appendix      |                     
+ dataset            | Grocery_and_Gourm...
+ dropout            | 0                   
+ early_stop         | 10                  
+ emb_size           | 64                  
+ epoch              | 200                 
+ eval_batch_size    | 256                 
+ gpu                | 0                   
+ l2                 | 1e-06               
+ lr                 | 0.001               
+ main_metric        |                     
+ momentum           | 0.995               
+ num_neg            | 1                   
+ num_workers        | 5                   
+ optimizer          | Adam                
+ random_seed        | 0                   
+ save_final_results | 1                   
+ test_all           | 0                   
+ topk               | 5,10,20,50          
+===========================================
+INFO:root:Device: cpu
+INFO:root:Load corpus from data/Grocery_and_Gourmet_Food\BaseReader.pkl
+INFO:root:#params: 1501504
+INFO:root:SCOMGNN(
+  (user_online): Embedding(14682, 64)
+  (user_target): Embedding(14682, 64)
+  (item_online): Embedding(8714, 64)
+  (item_target): Embedding(8714, 64)
+  (predictor): Linear(in_features=64, out_features=64, bias=True)
+  (bn): BatchNorm1d(64, eps=0, momentum=0.1, affine=False, track_running_stats=False)
+)
+INFO:root:Namespace(model_name='SCOMGNN', model_mode='')
+INFO:root:--------------------------------------------- BEGIN: 2024-12-22 13:28:07 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ batch_size         | 256                 
+ data_appendix      |                     
+ dataset            | Grocery_and_Gourm...
+ dropout            | 0                   
+ early_stop         | 10                  
+ emb_size           | 64                  
+ epoch              | 200                 
+ eval_batch_size    | 256                 
+ gpu                | 0                   
+ l2                 | 1e-06               
+ lr                 | 0.001               
+ main_metric        |                     
+ momentum           | 0.995               
+ num_neg            | 1                   
+ num_workers        | 5                   
+ optimizer          | Adam                
+ random_seed        | 0                   
+ save_final_results | 1                   
+ test_all           | 0                   
+ topk               | 5,10,20,50          
+===========================================
+INFO:root:Device: cpu
+INFO:root:Load corpus from data/Grocery_and_Gourmet_Food\BaseReader.pkl
+INFO:root:Namespace(model_name='SCOMGNN', model_mode='')
+INFO:root:--------------------------------------------- BEGIN: 2024-12-22 13:39:36 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ batch_size         | 256                 
+ data_appendix      |                     
+ dataset            | Grocery_and_Gourm...
+ dropout            | 0                   
+ early_stop         | 10                  
+ emb_size           | 64                  
+ epoch              | 200                 
+ eval_batch_size    | 256                 
+ gpu                | 0                   
+ l2                 | 1e-06               
+ lr                 | 0.001               
+ main_metric        |                     
+ momentum           | 0.995               
+ num_neg            | 1                   
+ num_workers        | 5                   
+ optimizer          | Adam                
+ random_seed        | 0                   
+ save_final_results | 1                   
+ test_all           | 0                   
+ topk               | 5,10,20,50          
+===========================================
+INFO:root:Device: cpu
+INFO:root:Load corpus from data/Grocery_and_Gourmet_Food\BaseReader.pkl
+INFO:root:Namespace(model_name='SCOMGNN', model_mode='')
+INFO:root:--------------------------------------------- BEGIN: 2024-12-22 13:42:28 ---------------------------------------------
+INFO:root:
+=======================================================
+ Arguments                      | Values               
+=======================================================
+ _action_groups                 | [<argparse._Argum...
+ _actions                       | [_HelpAction(opti...
+ _defaults                      | {}                  
+ _has_negative_number_optionals | []                  
+ _mutually_exclusive_groups     | []                  
+ _negative_number_matcher       | re.compile('^-\\d...
+ _option_string_actions         | {'-h': _HelpActio...
+ _optionals                     | <argparse._Argume...
+ _positionals                   | <argparse._Argume...
+ _registries                    | {'action': {None:...
+ add_help                       | True                
+ allow_abbrev                   | True                
+ conflict_handler               | error               
+ description                    |                     
+ exit_on_error                  | True                
+ formatter_class                | <class 'argparse....
+ prefix_chars                   | -                   
+ prog                           | main.py             
+=======================================================
+INFO:root:Namespace(model_name='SCOMGNN', model_mode='')
+INFO:root:--------------------------------------------- BEGIN: 2024-12-22 13:44:53 ---------------------------------------------
+INFO:root:
+=======================================================
+ Arguments                      | Values               
+=======================================================
+ _action_groups                 | [<argparse._Argum...
+ _actions                       | [_HelpAction(opti...
+ _defaults                      | {}                  
+ _has_negative_number_optionals | []                  
+ _mutually_exclusive_groups     | []                  
+ _negative_number_matcher       | re.compile('^-\\d...
+ _option_string_actions         | {'-h': _HelpActio...
+ _optionals                     | <argparse._Argume...
+ _positionals                   | <argparse._Argume...
+ _registries                    | {'action': {None:...
+ add_help                       | True                
+ allow_abbrev                   | True                
+ conflict_handler               | error               
+ description                    |                     
+ exit_on_error                  | True                
+ formatter_class                | <class 'argparse....
+ prefix_chars                   | -                   
+ prog                           | main.py             
+=======================================================
+INFO:root:Namespace(model_name='SCOMGNN', model_mode='')
+INFO:root:--------------------------------------------- BEGIN: 2024-12-22 13:45:12 ---------------------------------------------
+INFO:root:
+=======================================================
+ Arguments                      | Values               
+=======================================================
+ _action_groups                 | [<argparse._Argum...
+ _actions                       | [_HelpAction(opti...
+ _defaults                      | {}                  
+ _has_negative_number_optionals | []                  
+ _mutually_exclusive_groups     | []                  
+ _negative_number_matcher       | re.compile('^-\\d...
+ _option_string_actions         | {'-h': _HelpActio...
+ _optionals                     | <argparse._Argume...
+ _positionals                   | <argparse._Argume...
+ _registries                    | {'action': {None:...
+ add_help                       | True                
+ allow_abbrev                   | True                
+ conflict_handler               | error               
+ description                    |                     
+ exit_on_error                  | True                
+ formatter_class                | <class 'argparse....
+ prefix_chars                   | -                   
+ prog                           | main.py             
+=======================================================
+INFO:root:Namespace(model_name='SCOMGNN', model_mode='')
+INFO:root:--------------------------------------------- BEGIN: 2024-12-22 13:46:07 ---------------------------------------------
+INFO:root:
+=======================================================
+ Arguments                      | Values               
+=======================================================
+ _action_groups                 | [<argparse._Argum...
+ _actions                       | [_HelpAction(opti...
+ _defaults                      | {}                  
+ _has_negative_number_optionals | []                  
+ _mutually_exclusive_groups     | []                  
+ _negative_number_matcher       | re.compile('^-\\d...
+ _option_string_actions         | {'-h': _HelpActio...
+ _optionals                     | <argparse._Argume...
+ _positionals                   | <argparse._Argume...
+ _registries                    | {'action': {None:...
+ add_help                       | True                
+ allow_abbrev                   | True                
+ conflict_handler               | error               
+ description                    |                     
+ exit_on_error                  | True                
+ formatter_class                | <class 'argparse....
+ prefix_chars                   | -                   
+ prog                           | main.py             
+=======================================================
+INFO:root:Namespace(model_name='SCOMGNN', model_mode='')
+INFO:root:--------------------------------------------- BEGIN: 2024-12-22 13:47:55 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ batch_size         | 256                 
+ data_appendix      |                     
+ dataset            | Grocery_and_Gourm...
+ dropout            | 0                   
+ early_stop         | 10                  
+ emb_size           | 64                  
+ epoch              | 200                 
+ eval_batch_size    | 256                 
+ gpu                | 0                   
+ l2                 | 1e-06               
+ lr                 | 0.001               
+ main_metric        |                     
+ momentum           | 0.995               
+ num_neg            | 1                   
+ num_workers        | 5                   
+ optimizer          | Adam                
+ random_seed        | 0                   
+ save_final_results | 1                   
+ test_all           | 0                   
+ topk               | 5,10,20,50          
+===========================================
+INFO:root:Device: cpu
+INFO:root:Load corpus from data/Grocery_and_Gourmet_Food\BaseReader.pkl
+INFO:root:Namespace(model_name='SCOMGNN', model_mode='')
+INFO:root:--------------------------------------------- BEGIN: 2024-12-22 13:51:22 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ batch_size         | 256                 
+ data_appendix      |                     
+ dataset            | Grocery_and_Gourm...
+ dropout            | 0                   
+ early_stop         | 10                  
+ emb_size           | 64                  
+ epoch              | 200                 
+ eval_batch_size    | 256                 
+ gpu                | 0                   
+ l2                 | 1e-06               
+ lr                 | 0.001               
+ main_metric        |                     
+ momentum           | 0.995               
+ num_neg            | 1                   
+ num_workers        | 5                   
+ optimizer          | Adam                
+ random_seed        | 0                   
+ save_final_results | 1                   
+ test_all           | 0                   
+ topk               | 5,10,20,50          
+===========================================
+INFO:root:Device: cpu
+INFO:root:Load corpus from data/Grocery_and_Gourmet_Food\BaseReader.pkl
+INFO:root:Namespace(model_name='SCOMGNN', model_mode='')
+INFO:root:--------------------------------------------- BEGIN: 2024-12-22 13:52:14 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ batch_size         | 256                 
+ data_appendix      |                     
+ dataset            | Grocery_and_Gourm...
+ dropout            | 0                   
+ early_stop         | 10                  
+ emb_size           | 64                  
+ embedding_dim      | 16                  
+ epoch              | 200                 
+ eval_batch_size    | 256                 
+ gpu                | 0                   
+ l2                 | 1e-06               
+ lr                 | 0.001               
+ main_metric        |                     
+ momentum           | 0.995               
+ num_neg            | 1                   
+ num_workers        | 5                   
+ optimizer          | Adam                
+ random_seed        | 0                   
+ save_final_results | 1                   
+ test_all           | 0                   
+ topk               | 5,10,20,50          
+===========================================
+INFO:root:Device: cpu
+INFO:root:Load corpus from data/Grocery_and_Gourmet_Food\BaseReader.pkl
+INFO:root:Namespace(model_name='SCOMGNN', model_mode='')
+INFO:root:--------------------------------------------- BEGIN: 2024-12-22 13:52:32 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ batch_size         | 256                 
+ data_appendix      |                     
+ dataset            | Grocery_and_Gourm...
+ dropout            | 0                   
+ early_stop         | 10                  
+ emb_size           | 64                  
+ embedding_dim      | 16                  
+ epoch              | 200                 
+ eval_batch_size    | 256                 
+ gpu                | 0                   
+ l2                 | 1e-06               
+ lr                 | 0.001               
+ main_metric        |                     
+ mode               | att                 
+ momentum           | 0.995               
+ num_neg            | 1                   
+ num_workers        | 5                   
+ optimizer          | Adam                
+ random_seed        | 0                   
+ save_final_results | 1                   
+ test_all           | 0                   
+ topk               | 5,10,20,50          
+===========================================
+INFO:root:Device: cpu
+INFO:root:Load corpus from data/Grocery_and_Gourmet_Food\BaseReader.pkl
+INFO:root:#params: 28448
+INFO:root:SCOMGNN(
+  (embedding_cid2): Linear(in_features=768, out_features=16, bias=True)
+  (embedding_cid3): Linear(in_features=768, out_features=16, bias=True)
+  (embedding_price): Embedding(20, 16)
+  (nn_emb): Linear(in_features=48, out_features=16, bias=True)
+  (item_gc): Item_Graph_Convolution(
+    (gcn_low): GCN_Low()
+    (gcn_mid): GCN_Mid()
+    (bn1): BatchNorm1d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (bn2): BatchNorm1d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (two_att): Twostage_Attention(
+    (query1): Linear(in_features=16, out_features=16, bias=True)
+    (key1): Linear(in_features=16, out_features=16, bias=True)
+    (value1): Linear(in_features=16, out_features=16, bias=True)
+    (query2): Linear(in_features=16, out_features=16, bias=True)
+    (key2): Linear(in_features=16, out_features=16, bias=True)
+    (value2): Linear(in_features=16, out_features=16, bias=True)
+    (softmax): Softmax(dim=1)
+    (nn_cat): Linear(in_features=32, out_features=16, bias=True)
+  )
+)
+INFO:root:Namespace(model_name='SCOMGNN', model_mode='')
+INFO:root:--------------------------------------------- BEGIN: 2024-12-22 13:56:59 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ batch_size         | 256                 
+ data_appendix      |                     
+ dataset            | Grocery_and_Gourm...
+ dropout            | 0                   
+ early_stop         | 10                  
+ emb_size           | 64                  
+ embedding_dim      | 16                  
+ epoch              | 200                 
+ eval_batch_size    | 256                 
+ gpu                | 0                   
+ l2                 | 1e-06               
+ lr                 | 0.001               
+ main_metric        |                     
+ mode               | att                 
+ momentum           | 0.995               
+ num_neg            | 1                   
+ num_workers        | 5                   
+ optimizer          | Adam                
+ random_seed        | 0                   
+ save_final_results | 1                   
+ test_all           | 0                   
+ topk               | 5,10,20,50          
+===========================================
+INFO:root:Device: cpu
+INFO:root:Load corpus from data/Grocery_and_Gourmet_Food\BaseReader.pkl
+INFO:root:#params: 28448
+INFO:root:SCOMGNN(
+  (embedding_cid2): Linear(in_features=768, out_features=16, bias=True)
+  (embedding_cid3): Linear(in_features=768, out_features=16, bias=True)
+  (embedding_price): Embedding(20, 16)
+  (nn_emb): Linear(in_features=48, out_features=16, bias=True)
+  (item_gc): Item_Graph_Convolution(
+    (gcn_low): GCN_Low()
+    (gcn_mid): GCN_Mid()
+    (bn1): BatchNorm1d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (bn2): BatchNorm1d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (two_att): Twostage_Attention(
+    (query1): Linear(in_features=16, out_features=16, bias=True)
+    (key1): Linear(in_features=16, out_features=16, bias=True)
+    (value1): Linear(in_features=16, out_features=16, bias=True)
+    (query2): Linear(in_features=16, out_features=16, bias=True)
+    (key2): Linear(in_features=16, out_features=16, bias=True)
+    (value2): Linear(in_features=16, out_features=16, bias=True)
+    (softmax): Softmax(dim=1)
+    (nn_cat): Linear(in_features=32, out_features=16, bias=True)
+  )
+)
+INFO:root:Namespace(model_name='SCOMGNN', model_mode='')
+INFO:root:--------------------------------------------- BEGIN: 2024-12-22 14:00:37 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ batch_size         | 256                 
+ data_appendix      |                     
+ dataset            | Grocery_and_Gourm...
+ dropout            | 0                   
+ early_stop         | 10                  
+ emb_size           | 64                  
+ embedding_dim      | 16                  
+ epoch              | 200                 
+ eval_batch_size    | 256                 
+ gpu                | 0                   
+ l2                 | 1e-06               
+ lr                 | 0.001               
+ main_metric        |                     
+ mode               | att                 
+ momentum           | 0.995               
+ num_neg            | 1                   
+ num_workers        | 5                   
+ optimizer          | Adam                
+ random_seed        | 0                   
+ save_final_results | 1                   
+ test_all           | 0                   
+ topk               | 5,10,20,50          
+===========================================
+INFO:root:Device: cpu
+INFO:root:Load corpus from data/Grocery_and_Gourmet_Food\BaseReader.pkl
+INFO:root:#params: 28448
+INFO:root:SCOMGNN(
+  (embedding_cid2): Linear(in_features=768, out_features=16, bias=True)
+  (embedding_cid3): Linear(in_features=768, out_features=16, bias=True)
+  (embedding_price): Embedding(20, 16)
+  (nn_emb): Linear(in_features=48, out_features=16, bias=True)
+  (item_gc): Item_Graph_Convolution(
+    (gcn_low): GCN_Low()
+    (gcn_mid): GCN_Mid()
+    (bn1): BatchNorm1d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (bn2): BatchNorm1d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (two_att): Twostage_Attention(
+    (query1): Linear(in_features=16, out_features=16, bias=True)
+    (key1): Linear(in_features=16, out_features=16, bias=True)
+    (value1): Linear(in_features=16, out_features=16, bias=True)
+    (query2): Linear(in_features=16, out_features=16, bias=True)
+    (key2): Linear(in_features=16, out_features=16, bias=True)
+    (value2): Linear(in_features=16, out_features=16, bias=True)
+    (softmax): Softmax(dim=1)
+    (nn_cat): Linear(in_features=32, out_features=16, bias=True)
+  )
+)
+INFO:root:Namespace(model_name='SCOMGNN', model_mode='')
+INFO:root:--------------------------------------------- BEGIN: 2024-12-22 14:01:28 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ batch_size         | 256                 
+ data_appendix      |                     
+ dataset            | Grocery_and_Gourm...
+ dropout            | 0                   
+ early_stop         | 10                  
+ emb_size           | 64                  
+ embedding_dim      | 16                  
+ epoch              | 200                 
+ eval_batch_size    | 256                 
+ gpu                | 0                   
+ l2                 | 1e-06               
+ lr                 | 0.001               
+ main_metric        |                     
+ mode               | att                 
+ momentum           | 0.995               
+ num_neg            | 1                   
+ num_workers        | 5                   
+ optimizer          | Adam                
+ random_seed        | 0                   
+ save_final_results | 1                   
+ test_all           | 0                   
+ topk               | 5,10,20,50          
+===========================================
+INFO:root:Device: cpu
+INFO:root:Load corpus from data/Grocery_and_Gourmet_Food\BaseReader.pkl
+INFO:root:#params: 28448
+INFO:root:SCOMGNN(
+  (embedding_cid2): Linear(in_features=768, out_features=16, bias=True)
+  (embedding_cid3): Linear(in_features=768, out_features=16, bias=True)
+  (embedding_price): Embedding(20, 16)
+  (nn_emb): Linear(in_features=48, out_features=16, bias=True)
+  (item_gc): Item_Graph_Convolution(
+    (gcn_low): GCN_Low()
+    (gcn_mid): GCN_Mid()
+    (bn1): BatchNorm1d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (bn2): BatchNorm1d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (two_att): Twostage_Attention(
+    (query1): Linear(in_features=16, out_features=16, bias=True)
+    (key1): Linear(in_features=16, out_features=16, bias=True)
+    (value1): Linear(in_features=16, out_features=16, bias=True)
+    (query2): Linear(in_features=16, out_features=16, bias=True)
+    (key2): Linear(in_features=16, out_features=16, bias=True)
+    (value2): Linear(in_features=16, out_features=16, bias=True)
+    (softmax): Softmax(dim=1)
+    (nn_cat): Linear(in_features=32, out_features=16, bias=True)
+  )
+)
+INFO:root:Namespace(model_name='SCOMGNN', model_mode='')
+INFO:root:--------------------------------------------- BEGIN: 2024-12-22 14:01:53 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ batch_size         | 256                 
+ data_appendix      |                     
+ dataset            | Grocery_and_Gourm...
+ dropout            | 0                   
+ early_stop         | 10                  
+ emb_size           | 64                  
+ embedding_dim      | 16                  
+ epoch              | 200                 
+ eval_batch_size    | 256                 
+ gpu                | 0                   
+ l2                 | 1e-06               
+ lr                 | 0.001               
+ main_metric        |                     
+ mode               | att                 
+ momentum           | 0.995               
+ num_neg            | 1                   
+ num_workers        | 5                   
+ optimizer          | Adam                
+ random_seed        | 0                   
+ runs               | 10                  
+ save_final_results | 1                   
+ test_all           | 0                   
+ topk               | 5,10,20,50          
+===========================================
+INFO:root:Device: cpu
+INFO:root:Load corpus from data/Grocery_and_Gourmet_Food\BaseReader.pkl
+INFO:root:#params: 28448
+INFO:root:SCOMGNN(
+  (embedding_cid2): Linear(in_features=768, out_features=16, bias=True)
+  (embedding_cid3): Linear(in_features=768, out_features=16, bias=True)
+  (embedding_price): Embedding(20, 16)
+  (nn_emb): Linear(in_features=48, out_features=16, bias=True)
+  (item_gc): Item_Graph_Convolution(
+    (gcn_low): GCN_Low()
+    (gcn_mid): GCN_Mid()
+    (bn1): BatchNorm1d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (bn2): BatchNorm1d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (two_att): Twostage_Attention(
+    (query1): Linear(in_features=16, out_features=16, bias=True)
+    (key1): Linear(in_features=16, out_features=16, bias=True)
+    (value1): Linear(in_features=16, out_features=16, bias=True)
+    (query2): Linear(in_features=16, out_features=16, bias=True)
+    (key2): Linear(in_features=16, out_features=16, bias=True)
+    (value2): Linear(in_features=16, out_features=16, bias=True)
+    (softmax): Softmax(dim=1)
+    (nn_cat): Linear(in_features=32, out_features=16, bias=True)
+  )
+)
+INFO:root:Namespace(model_name='SCOMGNN', model_mode='')
+INFO:root:--------------------------------------------- BEGIN: 2024-12-22 14:03:25 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ batch_size         | 256                 
+ data_appendix      |                     
+ dataset            | Grocery_and_Gourm...
+ dropout            | 0                   
+ early_stop         | 10                  
+ emb_size           | 64                  
+ embedding_dim      | 16                  
+ epoch              | 200                 
+ eval_batch_size    | 256                 
+ gpu                | 0                   
+ l2                 | 1e-06               
+ lr                 | 0.001               
+ main_metric        |                     
+ mode               | att                 
+ momentum           | 0.995               
+ num_neg            | 1                   
+ num_workers        | 5                   
+ optimizer          | Adam                
+ random_seed        | 0                   
+ runs               | 10                  
+ save_final_results | 1                   
+ test_all           | 0                   
+ topk               | 5,10,20,50          
+ weight_decay       | 5e-08               
+===========================================
+INFO:root:Device: cpu
+INFO:root:Load corpus from data/Grocery_and_Gourmet_Food\BaseReader.pkl
+INFO:root:#params: 28448
+INFO:root:SCOMGNN(
+  (embedding_cid2): Linear(in_features=768, out_features=16, bias=True)
+  (embedding_cid3): Linear(in_features=768, out_features=16, bias=True)
+  (embedding_price): Embedding(20, 16)
+  (nn_emb): Linear(in_features=48, out_features=16, bias=True)
+  (item_gc): Item_Graph_Convolution(
+    (gcn_low): GCN_Low()
+    (gcn_mid): GCN_Mid()
+    (bn1): BatchNorm1d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (bn2): BatchNorm1d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (two_att): Twostage_Attention(
+    (query1): Linear(in_features=16, out_features=16, bias=True)
+    (key1): Linear(in_features=16, out_features=16, bias=True)
+    (value1): Linear(in_features=16, out_features=16, bias=True)
+    (query2): Linear(in_features=16, out_features=16, bias=True)
+    (key2): Linear(in_features=16, out_features=16, bias=True)
+    (value2): Linear(in_features=16, out_features=16, bias=True)
+    (softmax): Softmax(dim=1)
+    (nn_cat): Linear(in_features=32, out_features=16, bias=True)
+  )
+)
+INFO:root:Namespace(model_name='SCOMGNN', model_mode='')
+INFO:root:--------------------------------------------- BEGIN: 2024-12-22 14:03:38 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ batch_size         | 256                 
+ data_appendix      |                     
+ dataset            | Grocery_and_Gourm...
+ dropout            | 0                   
+ early_stop         | 10                  
+ emb_size           | 64                  
+ embedding_dim      | 16                  
+ epoch              | 200                 
+ eval_batch_size    | 256                 
+ gpu                | 0                   
+ l2                 | 1e-06               
+ lr                 | 0.001               
+ main_metric        |                     
+ mode               | att                 
+ momentum           | 0.995               
+ num_epoch          | 200                 
+ num_neg            | 1                   
+ num_workers        | 5                   
+ optimizer          | Adam                
+ random_seed        | 0                   
+ runs               | 10                  
+ save_final_results | 1                   
+ test_all           | 0                   
+ topk               | 5,10,20,50          
+ weight_decay       | 5e-08               
+===========================================
+INFO:root:Device: cpu
+INFO:root:Load corpus from data/Grocery_and_Gourmet_Food\BaseReader.pkl
+INFO:root:#params: 28448
+INFO:root:SCOMGNN(
+  (embedding_cid2): Linear(in_features=768, out_features=16, bias=True)
+  (embedding_cid3): Linear(in_features=768, out_features=16, bias=True)
+  (embedding_price): Embedding(20, 16)
+  (nn_emb): Linear(in_features=48, out_features=16, bias=True)
+  (item_gc): Item_Graph_Convolution(
+    (gcn_low): GCN_Low()
+    (gcn_mid): GCN_Mid()
+    (bn1): BatchNorm1d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (bn2): BatchNorm1d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (two_att): Twostage_Attention(
+    (query1): Linear(in_features=16, out_features=16, bias=True)
+    (key1): Linear(in_features=16, out_features=16, bias=True)
+    (value1): Linear(in_features=16, out_features=16, bias=True)
+    (query2): Linear(in_features=16, out_features=16, bias=True)
+    (key2): Linear(in_features=16, out_features=16, bias=True)
+    (value2): Linear(in_features=16, out_features=16, bias=True)
+    (softmax): Softmax(dim=1)
+    (nn_cat): Linear(in_features=32, out_features=16, bias=True)
+  )
+)
+INFO:root:Namespace(model_name='SCOMGNN', model_mode='')
+INFO:root:--------------------------------------------- BEGIN: 2024-12-22 14:05:23 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ batch_size         | 256                 
+ data_appendix      |                     
+ dataset            | Grocery_and_Gourm...
+ dropout            | 0                   
+ early_stop         | 10                  
+ emb_size           | 64                  
+ embedding_dim      | 16                  
+ epoch              | 200                 
+ eval_batch_size    | 256                 
+ gpu                | 0                   
+ l2                 | 1e-06               
+ lr                 | 0.001               
+ main_metric        |                     
+ mode               | att                 
+ momentum           | 0.995               
+ num_epoch          | 200                 
+ num_neg            | 1                   
+ num_workers        | 5                   
+ optimizer          | Adam                
+ random_seed        | 0                   
+ runs               | 10                  
+ save_final_results | 1                   
+ test_all           | 0                   
+ topk               | 5,10,20,50          
+ weight_decay       | 5e-08               
+===========================================
+INFO:root:Device: cpu
+INFO:root:Load corpus from data/Grocery_and_Gourmet_Food\BaseReader.pkl
+INFO:root:#params: 5920
+INFO:root:SCOMGNN(
+  (embedding_cid2): Linear(in_features=64, out_features=16, bias=True)
+  (embedding_cid3): Linear(in_features=64, out_features=16, bias=True)
+  (embedding_price): Embedding(20, 16)
+  (nn_emb): Linear(in_features=48, out_features=16, bias=True)
+  (item_gc): Item_Graph_Convolution(
+    (gcn_low): GCN_Low()
+    (gcn_mid): GCN_Mid()
+    (bn1): BatchNorm1d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (bn2): BatchNorm1d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (two_att): Twostage_Attention(
+    (query1): Linear(in_features=16, out_features=16, bias=True)
+    (key1): Linear(in_features=16, out_features=16, bias=True)
+    (value1): Linear(in_features=16, out_features=16, bias=True)
+    (query2): Linear(in_features=16, out_features=16, bias=True)
+    (key2): Linear(in_features=16, out_features=16, bias=True)
+    (value2): Linear(in_features=16, out_features=16, bias=True)
+    (softmax): Softmax(dim=1)
+    (nn_cat): Linear(in_features=32, out_features=16, bias=True)
+  )
+)
+INFO:root:Namespace(model_name='SCOMGNN', model_mode='')
+INFO:root:--------------------------------------------- BEGIN: 2024-12-22 14:11:56 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ batch_size         | 256                 
+ data_appendix      |                     
+ dataset            | Grocery_and_Gourm...
+ dropout            | 0                   
+ early_stop         | 10                  
+ emb_size           | 64                  
+ embedding_dim      | 16                  
+ epoch              | 200                 
+ eval_batch_size    | 256                 
+ gpu                | 0                   
+ l2                 | 1e-06               
+ lr                 | 0.001               
+ main_metric        |                     
+ mode               | att                 
+ momentum           | 0.995               
+ num_epoch          | 200                 
+ num_neg            | 1                   
+ num_workers        | 5                   
+ optimizer          | Adam                
+ random_seed        | 0                   
+ runs               | 10                  
+ save_final_results | 1                   
+ test_all           | 0                   
+ topk               | 5,10,20,50          
+ weight_decay       | 5e-08               
+===========================================
+INFO:root:Device: cpu
+INFO:root:Load corpus from data/Grocery_and_Gourmet_Food\BaseReader.pkl
+INFO:root:#params: 28448
+INFO:root:SCOMGNN(
+  (embedding_cid2): Linear(in_features=768, out_features=16, bias=True)
+  (embedding_cid3): Linear(in_features=768, out_features=16, bias=True)
+  (embedding_price): Embedding(20, 16)
+  (nn_emb): Linear(in_features=48, out_features=16, bias=True)
+  (item_gc): Item_Graph_Convolution(
+    (gcn_low): GCN_Low()
+    (gcn_mid): GCN_Mid()
+    (bn1): BatchNorm1d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (bn2): BatchNorm1d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (two_att): Twostage_Attention(
+    (query1): Linear(in_features=16, out_features=16, bias=True)
+    (key1): Linear(in_features=16, out_features=16, bias=True)
+    (value1): Linear(in_features=16, out_features=16, bias=True)
+    (query2): Linear(in_features=16, out_features=16, bias=True)
+    (key2): Linear(in_features=16, out_features=16, bias=True)
+    (value2): Linear(in_features=16, out_features=16, bias=True)
+    (softmax): Softmax(dim=1)
+    (nn_cat): Linear(in_features=32, out_features=16, bias=True)
+  )
+)
