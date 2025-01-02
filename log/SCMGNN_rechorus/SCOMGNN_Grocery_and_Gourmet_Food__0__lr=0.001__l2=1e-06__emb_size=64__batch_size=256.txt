@@ -1,0 +1,296 @@
+INFO:root:Namespace(model_name='SCMGNN_rechorus', model_mode='')
+INFO:root:--------------------------------------------- BEGIN: 2024-12-24 19:42:16 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values
+===========================================
+ batch_size         | 256
+ data_appendix      |
+ dataset            | Grocery_and_Gourm...
+ dropout            | 0
+ early_stop         | 10
+ epoch              | 5
+ eval_batch_size    | 256
+ gpu                | 0
+ history_max        | 20
+ l2                 | 0
+ lr                 | 0.001
+ main_metric        |
+ num_neg            | 1
+ num_workers        | 0
+ optimizer          | Adam
+ random_seed        | 0
+ save_final_results | 1
+ test_all           | 0
+ topk               | 5,10,20,50
+===========================================
+INFO:root:Device: cuda
+INFO:root:Reading data from "D:\temp\ReChorus\ReChorus-master\data", dataset = "Grocery_and_Gourmet_Food"
+INFO:root:Counting dataset statistics...
+INFO:root:"# user": 14681, "# item": 8713, "# entry": 151254
+INFO:root:Appending history info...
+INFO:root:Save corpus to D:\temp\ReChorus\ReChorus-master\data\Grocery_and_Gourmet_Food\SeqReader.pkl
+INFO:root:#params: 673536
+INFO:root:Dcrec(
+  (emb_layer): TransformerEmbedding(
+    (token_emb): Embedding(8715, 64, padding_idx=0)
+    (position_emb): Embedding(50, 64)
+    (dropout): Dropout(p=0.1, inplace=False)
+  )
+  (transformer_layers): ModuleList(
+    (0-1): 2 x TransformerLayer(
+      (attention): MultiHeadAttention(
+        (linear_layers): ModuleList(
+          (0-2): 3 x Linear(in_features=64, out_features=64, bias=True)
+        )
+        (output_linear): Linear(in_features=64, out_features=64, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (feed_forward): PositionwiseFeedForward(
+        (w_1): Linear(in_features=64, out_features=256, bias=True)
+        (w_2): Linear(in_features=256, out_features=64, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+        (activation): GELU(approximate='none')
+      )
+      (input_sublayer): ResidualConnection(
+        (norm): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (output_sublayer): ResidualConnection(
+        (norm): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (dropout): Dropout(p=0.1, inplace=False)
+    )
+  )
+  (loss_func): CrossEntropyLoss()
+  (dropout): Dropout(p=0.1, inplace=False)
+  (layernorm): LayerNorm((64,), eps=1e-12, elementwise_affine=True)
+  (contrastive_learning_layer): CLLayer(
+    (fc1): Linear(in_features=64, out_features=64, bias=True)
+    (fc2): Linear(in_features=64, out_features=64, bias=True)
+  )
+  (gcn): GCN(
+    (layer): GraphConv(in=64, out=64, normalization=both, activation=None)
+  )
+  (loss_fct): CrossEntropyLoss()
+)
+INFO:root:Namespace(model_name='Dcrec', model_mode='')
+INFO:root:--------------------------------------------- BEGIN: 2024-12-14 17:44:08 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values
+===========================================
+ batch_size         | 256
+ data_appendix      |
+ dataset            | Grocery_and_Gourm...
+ dropout            | 0
+ early_stop         | 10
+ epoch              | 5
+ eval_batch_size    | 256
+ gpu                | 0
+ history_max        | 20
+ l2                 | 0
+ lr                 | 0.001
+ main_metric        |
+ num_neg            | 1
+ num_workers        | 0
+ optimizer          | Adam
+ random_seed        | 0
+ save_final_results | 1
+ test_all           | 0
+ topk               | 5,10,20,50
+===========================================
+INFO:root:Device: cuda
+INFO:root:Load corpus from D:\temp\ReChorus\ReChorus-master\data\Grocery_and_Gourmet_Food\SeqReader.pkl
+INFO:root:#params: 673536
+INFO:root:Dcrec(
+  (emb_layer): TransformerEmbedding(
+    (token_emb): Embedding(8715, 64, padding_idx=0)
+    (position_emb): Embedding(50, 64)
+    (dropout): Dropout(p=0.1, inplace=False)
+  )
+  (transformer_layers): ModuleList(
+    (0-1): 2 x TransformerLayer(
+      (attention): MultiHeadAttention(
+        (linear_layers): ModuleList(
+          (0-2): 3 x Linear(in_features=64, out_features=64, bias=True)
+        )
+        (output_linear): Linear(in_features=64, out_features=64, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (feed_forward): PositionwiseFeedForward(
+        (w_1): Linear(in_features=64, out_features=256, bias=True)
+        (w_2): Linear(in_features=256, out_features=64, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+        (activation): GELU(approximate='none')
+      )
+      (input_sublayer): ResidualConnection(
+        (norm): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (output_sublayer): ResidualConnection(
+        (norm): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (dropout): Dropout(p=0.1, inplace=False)
+    )
+  )
+  (loss_func): CrossEntropyLoss()
+  (dropout): Dropout(p=0.1, inplace=False)
+  (layernorm): LayerNorm((64,), eps=1e-12, elementwise_affine=True)
+  (contrastive_learning_layer): CLLayer(
+    (fc1): Linear(in_features=64, out_features=64, bias=True)
+    (fc2): Linear(in_features=64, out_features=64, bias=True)
+  )
+  (gcn): GCN(
+    (layer): GraphConv(in=64, out=64, normalization=both, activation=None)
+  )
+  (loss_fct): CrossEntropyLoss()
+)
+INFO:root:Namespace(model_name='Dcrec', model_mode='')
+INFO:root:--------------------------------------------- BEGIN: 2024-12-14 17:44:32 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values
+===========================================
+ batch_size         | 256
+ data_appendix      |
+ dataset            | Grocery_and_Gourm...
+ dropout            | 0
+ early_stop         | 10
+ epoch              | 5
+ eval_batch_size    | 256
+ gpu                | 0
+ history_max        | 20
+ l2                 | 0
+ lr                 | 0.001
+ main_metric        |
+ num_neg            | 1
+ num_workers        | 0
+ optimizer          | Adam
+ random_seed        | 0
+ save_final_results | 1
+ test_all           | 0
+ topk               | 5,10,20,50
+===========================================
+INFO:root:Device: cuda
+INFO:root:Load corpus from D:\temp\ReChorus\ReChorus-master\data\Grocery_and_Gourmet_Food\SeqReader.pkl
+INFO:root:#params: 673536
+INFO:root:Dcrec(
+  (emb_layer): TransformerEmbedding(
+    (token_emb): Embedding(8715, 64, padding_idx=0)
+    (position_emb): Embedding(50, 64)
+    (dropout): Dropout(p=0.1, inplace=False)
+  )
+  (transformer_layers): ModuleList(
+    (0-1): 2 x TransformerLayer(
+      (attention): MultiHeadAttention(
+        (linear_layers): ModuleList(
+          (0-2): 3 x Linear(in_features=64, out_features=64, bias=True)
+        )
+        (output_linear): Linear(in_features=64, out_features=64, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (feed_forward): PositionwiseFeedForward(
+        (w_1): Linear(in_features=64, out_features=256, bias=True)
+        (w_2): Linear(in_features=256, out_features=64, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+        (activation): GELU(approximate='none')
+      )
+      (input_sublayer): ResidualConnection(
+        (norm): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (output_sublayer): ResidualConnection(
+        (norm): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (dropout): Dropout(p=0.1, inplace=False)
+    )
+  )
+  (loss_func): CrossEntropyLoss()
+  (dropout): Dropout(p=0.1, inplace=False)
+  (layernorm): LayerNorm((64,), eps=1e-12, elementwise_affine=True)
+  (contrastive_learning_layer): CLLayer(
+    (fc1): Linear(in_features=64, out_features=64, bias=True)
+    (fc2): Linear(in_features=64, out_features=64, bias=True)
+  )
+  (gcn): GCN(
+    (layer): GraphConv(in=64, out=64, normalization=both, activation=None)
+  )
+  (loss_fct): CrossEntropyLoss()
+)
+INFO:root:Namespace(model_name='Dcrec', model_mode='')
+INFO:root:--------------------------------------------- BEGIN: 2024-12-14 17:47:12 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values
+===========================================
+ batch_size         | 256
+ data_appendix      |
+ dataset            | Grocery_and_Gourm...
+ dropout            | 0
+ early_stop         | 10
+ epoch              | 5
+ eval_batch_size    | 256
+ gpu                | 0
+ history_max        | 20
+ l2                 | 0
+ lr                 | 0.001
+ main_metric        |
+ num_neg            | 1
+ num_workers        | 0
+ optimizer          | Adam
+ random_seed        | 0
+ save_final_results | 1
+ test_all           | 0
+ topk               | 5,10,20,50
+===========================================
+INFO:root:Device: cuda
+INFO:root:Load corpus from D:\temp\ReChorus\ReChorus-master\data\Grocery_and_Gourmet_Food\SeqReader.pkl
+INFO:root:#params: 673536
+INFO:root:Dcrec(
+  (emb_layer): TransformerEmbedding(
+    (token_emb): Embedding(8715, 64, padding_idx=0)
+    (position_emb): Embedding(50, 64)
+    (dropout): Dropout(p=0.1, inplace=False)
+  )
+  (transformer_layers): ModuleList(
+    (0-1): 2 x TransformerLayer(
+      (attention): MultiHeadAttention(
+        (linear_layers): ModuleList(
+          (0-2): 3 x Linear(in_features=64, out_features=64, bias=True)
+        )
+        (output_linear): Linear(in_features=64, out_features=64, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (feed_forward): PositionwiseFeedForward(
+        (w_1): Linear(in_features=64, out_features=256, bias=True)
+        (w_2): Linear(in_features=256, out_features=64, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+        (activation): GELU(approximate='none')
+      )
+      (input_sublayer): ResidualConnection(
+        (norm): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (output_sublayer): ResidualConnection(
+        (norm): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (dropout): Dropout(p=0.1, inplace=False)
+    )
+  )
+  (loss_func): CrossEntropyLoss()
+  (dropout): Dropout(p=0.1, inplace=False)
+  (layernorm): LayerNorm((64,), eps=1e-12, elementwise_affine=True)
+  (contrastive_learning_layer): CLLayer(
+    (fc1): Linear(in_features=64, out_features=64, bias=True)
+    (fc2): Linear(in_features=64, out_features=64, bias=True)
+  )
+  (gcn): GCN(
+    (layer): GraphConv(in=64, out=64, normalization=both, activation=None)
+  )
+  (loss_fct): CrossEntropyLoss()
+)
