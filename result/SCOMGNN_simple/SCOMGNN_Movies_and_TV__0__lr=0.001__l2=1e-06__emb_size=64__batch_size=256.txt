@@ -1,0 +1,163 @@
+E:\anaconda3\envs\myenv_rechorus_3_10_4\python.exe C:\Users\ASUS\Desktop\ReChorus-master\src\main_scomGNN1.py
+Dataset: Movies_and_TV
+load processed OK
+load embs OK
+all load ok
+Finish generating adjacent matrix
+传递数据
+Using device: cpu
+移动相关设备完成
+begin train
+INFO:root:Namespace(model_name='SCMGNN', model_mode='')
+INFO:root:--------------------------------------------- BEGIN: 2024-12-27 11:09:28 ---------------------------------------------
+INFO:root:
+
+===========================================
+
+ Arguments          | Values
+
+===========================================
+
+ batch_size         | 256
+
+ data_appendix      |
+
+ dataset            | Grocery_and_Gourm...
+
+ dropout            | 0
+
+ early_stop         | 10
+
+ emb_size           | 64
+
+ epoch              | 200
+
+ eval_batch_size    | 256
+
+ gpu                | 0
+
+ history_max        | 20
+
+ l2                 | 1e-06
+
+ lr                 | 0.001
+
+ main_metric        |
+
+ num_heads          | 4
+
+ num_layers         | 1
+
+ num_neg            | 1
+
+ num_workers        | 5
+
+ optimizer          | Adam
+
+ random_seed        | 0
+
+ save_final_results | 1
+
+ test_all           | 0
+
+ topk               | 5,10,20,50
+
+===========================================
+INFO:root:Device: cpu
+INFO:root:Reading data from "data/", dataset = "Movies_and_TV"
+
+# Run:0 with random seed:1
+Epoch:0 Loss:0.68580091
+Epoch:0 Val HR@5:0.0459, HR@10:0.1038 NDCG:0.2089
+Epoch:1 Loss:0.61816347
+Epoch:1 Val HR@5:0.0457, HR@10:0.1074 NDCG:0.2069
+Epoch:2 Loss:0.56248879
+Epoch:2 Val HR@5:0.0470, HR@10:0.1093 NDCG:0.2065
+Epoch:3 Loss:0.50708705
+Epoch:3 Val HR@5:0.0587, HR@10:0.1335 NDCG:0.2156
+Epoch:4 Loss:0.46504268
+Epoch:4 Val HR@5:0.0758, HR@10:0.1554 NDCG:0.2250
+Epoch:5 Loss:0.44011635
+Epoch:5 Val HR@5:0.0779, HR@10:0.1573 NDCG:0.2281
+Epoch:6 Loss:0.42264706
+Epoch:6 Val HR@5:0.0977, HR@10:0.1779 NDCG:0.2369
+Epoch:7 Loss:0.40481299
+Epoch:7 Val HR@5:0.1341, HR@10:0.2269 NDCG:0.2571
+Epoch:8 Loss:0.38343155
+Epoch:8 Val HR@5:0.1472, HR@10:0.2585 NDCG:0.2685
+Epoch:9 Loss:0.36512262
+Epoch:9 Val HR@5:0.1642, HR@10:0.2960 NDCG:0.2812
+Epoch:10 Loss:0.35041422
+Epoch:10 Val HR@5:0.1619, HR@10:0.3006 NDCG:0.2825
+Epoch:11 Loss:0.33693102
+Epoch:11 Val HR@5:0.1547, HR@10:0.3010 NDCG:0.2818
+Epoch:12 Loss:0.32580066
+Epoch:12 Val HR@5:0.1638, HR@10:0.3152 NDCG:0.2878
+Epoch:13 Loss:0.31820732
+Epoch:13 Val HR@5:0.1779, HR@10:0.3398 NDCG:0.2955
+Epoch:14 Loss:0.31335047
+Epoch:14 Val HR@5:0.1878, HR@10:0.3528 NDCG:0.2992
+Epoch:15 Loss:0.31134242
+Epoch:15 Val HR@5:0.1842, HR@10:0.3497 NDCG:0.2988
+Epoch:16 Loss:0.30973870
+Epoch:16 Val HR@5:0.1798, HR@10:0.3448 NDCG:0.2969
+Epoch:17 Loss:0.30681977
+Epoch:17 Val HR@5:0.1789, HR@10:0.3356 NDCG:0.2951
+Epoch:18 Loss:0.30348721
+Epoch:18 Val HR@5:0.1798, HR@10:0.3288 NDCG:0.2935
+Epoch:19 Loss:0.30037352
+Epoch:19 Val HR@5:0.1819, HR@10:0.3303 NDCG:0.2941
+Loading 14th epoch
+Testing AUC!
+Testing HR@5:0.1954, HR@10:0.3514, NDCG:0.3002
+
+# Run:1 with random seed:2
+Epoch:0 Loss:0.67856175
+Epoch:0 Val HR@5:0.0785, HR@10:0.1617 NDCG:0.2320
+Epoch:1 Loss:0.58542174
+Epoch:1 Val HR@5:0.1168, HR@10:0.2171 NDCG:0.2539
+Epoch:2 Loss:0.49103925
+Epoch:2 Val HR@5:0.1084, HR@10:0.2053 NDCG:0.2512
+Epoch:3 Loss:0.44107625
+Epoch:3 Val HR@5:0.0973, HR@10:0.1874 NDCG:0.2469
+Epoch:4 Loss:0.42201614
+Epoch:4 Val HR@5:0.0960, HR@10:0.1893 NDCG:0.2470
+Epoch:5 Loss:0.42027664
+Epoch:5 Val HR@5:0.1053, HR@10:0.2057 NDCG:0.2528
+Epoch:6 Loss:0.40497291
+Epoch:6 Val HR@5:0.1164, HR@10:0.2358 NDCG:0.2580
+Epoch:7 Loss:0.38614485
+Epoch:7 Val HR@5:0.1314, HR@10:0.2579 NDCG:0.2646
+Epoch:8 Loss:0.37374163
+Epoch:8 Val HR@5:0.1421, HR@10:0.2747 NDCG:0.2717
+Epoch:9 Loss:0.36809590
+Epoch:9 Val HR@5:0.1432, HR@10:0.2813 NDCG:0.2750
+Epoch:10 Loss:0.36249596
+Epoch:10 Val HR@5:0.1413, HR@10:0.2922 NDCG:0.2773
+Epoch:11 Loss:0.35224527
+Epoch:11 Val HR@5:0.1491, HR@10:0.2987 NDCG:0.2813
+Epoch:12 Loss:0.33916888
+Epoch:12 Val HR@5:0.1608, HR@10:0.3139 NDCG:0.2869
+Epoch:13 Loss:0.32696214
+Epoch:13 Val HR@5:0.1710, HR@10:0.3253 NDCG:0.2928
+Epoch:14 Loss:0.31754461
+Epoch:14 Val HR@5:0.1810, HR@10:0.3320 NDCG:0.2979
+Epoch:15 Loss:0.31085682
+Epoch:15 Val HR@5:0.1880, HR@10:0.3438 NDCG:0.3032
+Epoch:16 Loss:0.30635682
+Epoch:16 Val HR@5:0.1950, HR@10:0.3522 NDCG:0.3077
+Epoch:17 Loss:0.30072734
+Epoch:17 Val HR@5:0.2070, HR@10:0.3640 NDCG:0.3137
+Epoch:18 Loss:0.29352272
+Epoch:18 Val HR@5:0.2208, HR@10:0.3790 NDCG:0.3195
+Epoch:19 Loss:0.28717756
+Epoch:19 Val HR@5:0.2240, HR@10:0.3935 NDCG:0.3223
+Loading 19th epoch
+Testing AUC!
+Testing HR@5:0.2227, HR@10:0.3747, NDCG:0.3179
+--------------------final results--------------------
+Test HR@5: mean0.2090, std0.0136, max0.2227, min0.1954
+Test HR@10: mean0.3630, std0.0116, max0.3747, min0.3514
+Test NDCG: mean0.3090, std0.0088, max0.3179, min0.3002
+
+进程已结束,退出代码0
